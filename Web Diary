@@ -1,0 +1,139 @@
+1.Termin: 02.06.2020
+  Das ist die Grundstruktur einer Website: wenn ich eine Website nehme und den ganzen Inhalt lösche dann bleibt das hier über : 
+  <!DOCTYPE html>
+  <html>
+      <head>
+
+      </head>
+      <body>
+
+      </body>
+  </html>
+  geöffneter Tag  <body>
+  Geschlossener Tag </body>
+  
+  Eine html Seite wird immer von oben nach unten gelesen
+
+  <!DOCTYPE html>
+  Das heißt html 5, neueste Version 
+  Vor doctype kommt nichts, nach steht immer html
+  Dann gliedert sich die Seite in head (meta Angaben, alles was der User nicht sieht, alles was der Browser/die Seite braucht, z.B. style sheets) und body (alles was der User sieht) Bereich
+
+  Damit verknupfe ich meine Homepage mit der Styling sheet, funktioniert so nur wenn sie im selben ordner abgelegt sind
+   <link rel="stylesheet" href="styling.css">
+
+  Mit CSS macht man eine Seite schön, CSS 3 ist die neueste Version
+
+  Files Ordner immer klein schreiben 
+  EntwedermeineErsteDatei.html
+  Odermeine_erste_datei.html ist eher fehleranfällig, sobald ein underscore fehlt funktioniert es nicht 
+
+  Commit= zwischengespeichert
+  Damit es in die cloud kommt muss ich pushen. 
+2.Termin 05.06.2020
+  Für eine Webseite online notwendig: 
+  Eine Domain, einmalig vergeben; top level domains (.at, .com)
+  Subdomain liegt unter der hauptdomain, z.B. shop oder blog, inhaltlich getrennt von der hauptdomain; vorteil: keine neue domain registrieren
+  Webspace--> Größe, habe ich zur Verfügung für meine Dateien, meine Seite 
+  Traffic-->entsteht durch das zugreifen von anderen auf meine Seite, wird verfolgt und gespeichert
+  Für welche Skriptsprachen ist der Webserver geeignet
+  FTP-->file transer protocol, sollte für eine domain dabei sein
+  SMTP-->simple mail transfer protocol
+  Ein Postfach kann mehrere MailAdresse haben, Orientierung: mit 10 MB kommt man nicht weit
+  Eine Mailadresse nur ein Postfach
+  SSL-->Verschlüsselung für sichere Übertragung der Daten von einer Webseite im Internet-Vorgänger, TLSS ist neuere Version
+  Cloudserver: Becca hat 7 in Finnland, erworben über deutsche Anbieter
+  Achten auf: Erreichbarkeit des Supports, Vertrag, Serververfügbarkeit, Zusatzleistungen (Finger weg davon)
+  Shared Hosting,shared Server, wird mit mehreren geteilt, Problem: man weiß nie wie die Kollegen mit Updates umgehen, viele Updates= angreifbar, könnte auch zu mir durchdringen
+  Virtual private Server-->ebenfalls geteilt, allerdings laufen hier mehrere Betriebssystem, abgekapselt, sicherer
+  Dedicated-->Eigener Server, kostet Lawine, muss alle Updates selber machen,
+  cloud hosting--> Daten auf mehrere Serveranlagen aufgeteilt, wenn Projekt größer dann kann ich mehr skalieren.
+  Probleme bei Seiten: 
+  1.	Bei aufmachen: hier entsteht ihre Webseite, die selbstgemachte Seite erscheint nicht. Browser greift auf falsche Index zu, wenn 2 vorhanden: auf htm. Statt html
+  2.	Tippfehler in der Startseite
+  3.	403-Zugriff verweigert, wahrscheinlich fehlt die Index Seite
+  4.	Dateien werden nicht angezeigt, obwohl alles hochgeladen: Dateien sind im falschen Ordner
+  5.	Bilder werden nicht angezeigt: checken ob sie nicht zu groß sind oder Bildpfad stimmt nicht, falscher Ordner
+  6.	Falsche Verlinkung ergibt 404 Meldung 
+
+
+  Strg # für kommentieren 
+  <meta name= „viewport“ content=“width=device-width, initial-scale=1“ für Anpassung der Anzeige am Handy
+  <meta name=“description“ conten=“HTML und CSS sind die Basis aller Webseiten“> ist wichtig für die Suchergebnisse im Internet
+  Navigation-->Auflistung von Links
+  H1-->Hauptüberschrift, auf einer Seite nie mehr als eine H1 haben
+  Main umfasst den Hauptcontent
+  Header ist Navigation, bleibt immer gleich und verändert sich nicht, z.B. Logo
+  Link ist mit einem a angezeigt
+  <li><a Href=“infos.html“>Infos</a></lin<>
+  Klassen, class ist wiederverwendbar, kann ich so oft verwenden wie ich will. Kann damit das styling im Css ansprechen und immer wieder verwenden
+  .firstclass ist Klassenname im css
+  Main.secondclass= main Bereich besitzt die second class
+  Main .secondclass= im main befindet sich die second class
+  bg=background
+  <p> ist ein Tag
+  Schriftart: wenn der Name der Schriftart mehr als ein Wort beinhaltet muss ich das unter Anführungszeichen schreiben, sonst checkt er nicht dass die zusammengehören, sonst brauche ich keine. Immer mehrere Schriftarten anführen z.B.3 damit er die nächste nehmen kann falls eine nicht vorhanden
+  Schriftgrö0e rem z.B. wenn ich sie 3 mal so groß haben will dann einfach so schreiben 3rem
+  Display: flex; texte nebeinander stellen 
+
+  Html lang=‘de‘ in html angeben in welcher Sprache die Seite geschrieben wird, man muss nicht, sollte aber
+  UTF-8-->die wichtigste Anzeige, digitale Kennzeichnung
+  <title> zweitwichtigste Angabe im Internet
+  <title>HTML und CSS</title>
+  <h1> Kontakt I Firmenname </h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  Skalierung der Website, Breite des Handys als Breite angeben, width=device-width, initial-scale=1 Seite am Handy und am Laptop ersichtlich
+  Bei initial-scale=2 sieht man die Seite nur am Handy, nicht am Laptop
+   <meta name="description" content="HTML und CSS sind die Basis aller Webseiten">
+  SuchmaschinenOptimierung, wird nach diesem text gesucht, content, kurz und knackig
+   <meta name="robots" content="noindex, nofollow"
+  Lieber im robots als im html schreiben, um Seite nicht zu finden, z.b. Tutorials bei meinem Blog nur für meine Follower, nicht mit Passwort geschützt. Kann aber doch von Google gefunden werden
+  Entities-->Codes für bestimmte Zeichen die ich einfach so im Code nicht schreiben kann, z.B. <>, &, 
+  <br> steht für break, muss nicht zugemacht werden, Zeilenumbruch wird verwendet um neuen Absatz zu beginnen, nicht um Absatz zu vergrößern
+  H1 wird üblicherweise nur einmal im Text verwendet
+  H1
+    H2 
+      H3
+      H3
+        H4
+    H2
+      H5
+  So sollte das aussehen
+  Das geht nicht H5
+  <!-- ein Kommentar setzen --> Kommentare sind auf der Homepage ersichtlich
+  <ol> ordered
+  <li>Li Listenelemnt
+  Liste besteht immer aus ol und li oder ul und li
+  Geordnete Liste kann mit 3 anfangen, statt nummerischt alphabetisch type=“A“
+  Start=“3“, reversed bringt die Reihen durcheinander, umgekehrt
+  Ol und ul im Code abwechseln wenn ich Listen untereinander erstelle und denen verschiedene Skalierung geben will
+  <dl>
+    <dt> Definitionterm 1</dt> Rolling Stones
+    <dd>Definition data 1</dt> alle einzelne Sänger
+  <hr>
+  Horizontal rule, horizontale linie, tag muss nicht geschlossen werden
+  Style kann  man auch im html eingeben, sollte man aber nicht machen sondern über css stylen
+  Inline style in der navigationsleiste style coden auf keinen Fall machen!!
+  <blockquote cite=https://creative-web.work>
+    <p> Bin ein ja was bin ich denn??</p> 
+  </blockquote>
+  <p><pre> so überträgt hmtl mein Text 1:1 über, mit allen Leerzeichen utd.
+  Preformated
+
+  <details>
+  <summary>
+  Erstes Element
+  </summary>
+  <p> bin ein text </p>
+  </details> 
+  Das sind codes zum aufklappen
+
+  Ul ist inline, Inlineelemente kommen nur in Blockelementen vor, Codes die sind in Texten drinnen, nehmen den Platz ein den sie brauchen, z.B. links, 
+  Block ist article, blockelemente nehmen die ganze Seite ein, z. B alle Überschriften und p tags
+  Main leitet den hauptinhalt ein
+  In der main sind article, inhalte die eigenständig existieren können, 
+  section dient zur Auszeichnung von Webseite, kommt in einem Article vor
+  seite schließt man mit footer ab, muss nicht unbedingt ende der seite sein, kann auch unter einem article sein, ist aber unüblich
+  div  , hat semantisch keine bedeutung, für block elemente
+  span nimmt man für inline elemente z.B. um einen teil des textes rot zu machen 
+  aside sind randbemerkungen, inhalte die sich auf den hauptinhalt beziehen aber nur am rande wichtig sind, blockelement, gehört zur Grobstruktur einer Seite
