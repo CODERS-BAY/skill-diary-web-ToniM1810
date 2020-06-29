@@ -137,3 +137,73 @@
   div  , hat semantisch keine bedeutung, für block elemente
   span nimmt man für inline elemente z.B. um einen teil des textes rot zu machen 
   aside sind randbemerkungen, inhalte die sich auf den hauptinhalt beziehen aber nur am rande wichtig sind, blockelement, gehört zur Grobstruktur einer Seite
+Termin 3.Web
+26.06.2020
+Tiny PNG und SMART PNG, für Komprimierung der Bilder
+Über unterschiedliche Browser, nicht über unterschiedliche Fenster kann man mehrere 20er Block der Bilder komprimieren( sonst nur 20 auf einmal), und speichern z.B. in Dropbox.
+Raster graphik pixel Grafik (png, jpg..) allgemein für Bilder besser
+ und vector graphik  Formate fürs web svg, gut für logos zwecks skalierung - nicht webtauglich sind ? 
+jpg füllt transparenten Bereich mit irgendeiner Farbe auf
+png kann transparente Bereiche darstellen
+gif kann man gut animieren
+webp bringt alle Eigenschaften der anderen mit
+„img src“ src=source
+„Alt“ Vorteil:1. wenn Bild nicht geladen wird, dann wird „alt“ angezeigt, 2. Blinde Menschen lassen sich Homepage vorlesen, dann wird alt vorgelesen 
+„title“ pop up fenster wenn ich drüber mit der Maus fahre
+<“figcaption“ für lange Beschreibungen des Bildes, dann kann ich alt weglassen, weil figcaption mein alt wird. 
+Code: 
+<figure>
+<img src=“…“
+<figcaption> Beschreibung </figcaption>
+</figure>
+Es kann jederzeit auch eine class drinnen eingebaut werden
+Width=“200“
+Heigth=“400“
+Mit diesen zwei Angaben direkt im html sorge ich dafür dass die Seite nicht herumspringt bis das Bild geladen wird, dass der Platz für das Bild frei gehalten wird bis das Bild geladen wird Platzhalter
+Bei Bilder legt man meistens nur Breite fest und nicht die Höhe
+SVG Bilder man kann mit svg zeichnen, kann man auch mit img hochladen
+Favicons link rel=“shortcut icon“
+		Type=“image/x-icon“
+		Href=“image.ico“>
+Die meisten favicon generatoren liefern den html code mit, einfach nur einbauen
+Videos—Y Unterscheidung in codierung und container format
+Codierung vp8, mp4, 
+container format 
+Wichtig für web mpeg4, webm vp8 oder 0, ogg
+Es gibt noch kein format welches jeder Browser kann
+Mpeg4 alle aißer oper
+Mp4 ist das gängigste
+<video Src=“   “
+Width=“400“
+Controls
+Mukd
+Loop
+Poster=“kake.jpg“
+Preload
+Autoplay>
+
+<video controls>
+	>source…. Webm>
+	>source….mp4>
+c/video>
+audio funktioniert gleich wie video, nur statt video audio schreiben
+einbetten von youtube, unten bei button  einbetten ist html code über i frame kann ich in meinem fenster dass andere fenster einbauen, fenster von youtube, schwer zu stylen. 
+
+
+Von stylesheet ordner aus „../img/bild.jpg“
+Von index in img „img/bild,jpg“
+Links 
+<a href=“kontakt.html“>
+<a href=“#sprungmaske“>
+Die zwei oberen links kann ich kombinieren kontakt.html#sprungziel
+<a href=http://...
+	Target“_blank“> macht den Link in neuem Fenster auf
+<h1 id=“sprungmarke“>…</h1>
+Id ist unique, kommt nur einmal auf der Seite vor, mit der kann ich von article zu article springen, mit # weiß der link dass er id sucht, irgendwo
+ ist dann ein „tag“ z.b. Überschrift mit der id
+Seiten mit rauf scrollen button funktionieren nach dem sprung prinzip
+Verlinkung auf pdf funktioniert auch so mit a href
+Download funktionieren auch so mit der Option dass ich vorschlage wie der download heißen soll
+Download=“   .pdf“
+<a Href=mailto:max@m.at>
+<a href=tel:+4312341234>
